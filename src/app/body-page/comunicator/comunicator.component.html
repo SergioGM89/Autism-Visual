@@ -1,0 +1,23 @@
+<div *ngIf="loading; else communicator" class="loader-container d-flex justify-content-center align-items-center vh-100 vw-100">
+    <span class="loader"></span>
+</div>
+
+<ng-template #communicator class="communicator vh-100">
+    <div class="communicator-panel">
+        <div class="time-line-container">
+            <div class="container-fluid">
+                <app-timeline />
+            </div>
+        </div>
+        <div class="picto-board row">
+            <div class="picto-board-container col-10">
+                <app-picto-board />
+            </div>
+            <div class="time-line-controls col-2">
+                <div class="container-fluid d-flex justify-content-center">
+                    <app-control-buttons />
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

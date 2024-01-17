@@ -1,0 +1,115 @@
+.picto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--empty-slot);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    width: 120px;
+    height: 90px;
+
+    border-radius: 10px;
+    // border-color: var(--grey-border);
+    border-width: 1px;
+    // border-style: solid;
+
+    transition: background-color 2s ease;
+}
+
+.shadow-drop-center {
+    -webkit-animation: shadow-drop-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 --primary-color;
+        box-shadow: 0 0 0 0 --primary-color;
+    }
+
+    50% {
+        background-color: rgb(0, 235, 117, 0.05);
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgb(0, 235, 117, 0.35);
+        box-shadow: 0 0 20px 0px rgb(0, 235, 117, 0.35);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 0 0 --primary-color;
+        box-shadow: 0 0 0 0 --primary-color;
+    }
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    50% {
+        background-color: rgb(0, 235, 117, 0.05);
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgb(0, 235, 117, 0.35);
+        box-shadow: 0 0 20px 0px rgb(0, 235, 117, 0.35);
+    }
+
+    100% {
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 0 0 --primary-color;
+        box-shadow: 0 0 0 0 --primary-color;
+    }
+}
+
+
+// .picto {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   background-color: #00000010;
+
+//   font-size: 30px;
+//   font-weight: bold;
+
+//   width: 120px;
+//   height: 90px;
+
+//   border-radius: 10px;
+//   border-color: #00000026;
+//   border-width: 1px;
+//   border-style: solid;
+
+//   transition: background-color 2s ease;
+// }
+
+// .slot.green {
+//   background-color: var(--green-slot);
+//   color: white;
+// }
+
+// .slot.yellow {
+//   background-color: var(--yellow-slot);
+//   color: white;
+// }
+
+// .slot.grey {
+//   background-color: var(--grey-slot);
+//   color: white;
+// }
+
+// .slot.selected {
+//   border-color: var(--blue-border)
+// }

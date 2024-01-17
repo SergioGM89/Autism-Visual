@@ -1,0 +1,75 @@
+.communicator{
+    padding-top: 8rem;
+    background-color: #00000040;
+}
+
+.time-line-container {
+  margin: 0 auto;
+  max-width: 90%;
+  margin-top: 100px;
+}
+
+.picto-board {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // max-width: 90%;
+    border-radius: 10px;
+    border-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    margin: 30px 10px 0 10px;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: var(--primary-color);
+    left: -100px;
+    box-sizing: border-box;
+    animation: shadowRolling 2.1s linear infinite;
+  }
+  
+  @keyframes shadowRolling {
+    0% {
+      box-shadow: -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0);
+    }
+    12% {
+      box-shadow: 100px 0 var(--primary-color), -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0);
+    }
+    25% {
+      box-shadow: 110px 0 var(--primary-color), 100px 0 var(--primary-color), -50px 0 rgba(255, 255, 255, 0), -50px 0 rgba(255, 255, 255, 0);
+    }
+    36% {
+      box-shadow: 120px 0 var(--primary-color), 110px 0 var(--primary-color), 100px 0 var(--primary-color), -50px 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+      box-shadow: 130px 0 var(--primary-color), 120px 0 var(--primary-color), 110px 0 var(--primary-color), 100px 0 var(--primary-color);
+    }
+    62% {
+      box-shadow: 250px 0 rgba(255, 255, 255, 0), 130px 0 var(--primary-color), 120px 0 var(--primary-color), 110px 0 var(--primary-color);
+    }
+    75% {
+      box-shadow: 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0), 130px 0 var(--primary-color), 120px 0 var(--primary-color);
+    }
+    87% {
+      box-shadow: 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0), 130px 0 var(--primary-color);
+    }
+    100% {
+      box-shadow: 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0), 250px 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+@media only screen and (max-width: 575px) {
+    .communicator{
+      padding-top: 4rem;
+    }
+    .time-line-container {
+      margin-top: 80px;
+    }
+  }
